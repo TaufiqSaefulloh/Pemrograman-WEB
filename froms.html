@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>froms</title>
+</head>
+<body>
+    <h2>HTML Forms</h2>
+    <form action="/action_page.php">
+        <label for="fname">First Name</label><br>
+        <input type="text" id="fname" name="fname" value="John"><br>
+
+        <label for="lname">Last Name</label><br>
+        <input type="text" name="lname" id="lname" value="Doe" readonly><br>
+
+        <label for="lname">Data</label><br>
+        <input type="text" id="lname" name="ldata" value="None" disabled><br>
+
+        <label for="lname">Age</label>
+        <input type="number" id="lname" name="lage" required><br>
+
+        <label for="lname">Select</label><br>
+            <select name="cars" id="car">
+                <option value="">Volvo</option>
+                <option value="">Saab</option>
+                <option value="">Fiat</option>
+                <option value="">Audi</option>
+            </select><br>
+        
+            <label for="lname">Multiple</label><br>
+            <select name="cars" size="4" multiple>
+                <option value="">Volvo</option>
+                <option value="">Saab</option>
+                <option value="">Fiat</option>
+                <option value="">Audi</option>
+            </select><br>
+        
+            <label for="lname">Gender</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female"Female></label><br>
+            <input type="radio" name="gender" id="other" value="other">
+            <label for="other">Other</label><br>
+
+            <label for="lname">Choose</label>
+            <input type="checkbox" name="vehicle1" id="vehicle1" value="Bike">
+            <label for="vehicle">I have a bike</label><br>
+            <input type="checkbox" name="vehicle2" id="vehicle2" value="Car">
+            <label for="vehicle2">I have a car</label><br>
+            <input type="cehckbox" name="vehicle3" id="vehicle3" value="Boat">
+            <label for="vehicle3">I have a boat</label><br>
+
+            <label for="lname">Text Area</label><br>
+            <textarea name="message" id="" cols="30" rows="10">The cat was playing in the garden</textarea><br>
+
+            <label for="favcolor">Select your favorite color</label><br>
+            <input type="color" id="favcolor" name="favcolor">
+
+            <label for="birthday">Birthday</label><br>
+            <input type="date" id="brithday" name="birthday"><br>
+
+            <label for="email">Enter your email</label><br>
+            <input type="email" name="email" id="email"><br>
+
+            <label for="myfile">Select a file</label><br>
+            <input type="file" id="myfile" name="myfile">
+
+            <input type="submit" value="submit"><br>
+    </form>
+    <p>if you click the "Submit" button, the form data will be sent to page called "/action_page.php"</p>
+
+</body>
+</html>
